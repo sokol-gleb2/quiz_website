@@ -1,0 +1,69 @@
+
+<html >
+<div style="background-image: url('congrats.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+  <head>
+    <link rel="stylesheet" href="quizSubmitted_Stylez.css">
+    <div id="logo">
+      <br>
+      <img src="IA_Logo.png">
+    </div>
+    <title>End Page</title>
+  </head>
+  <body style="background-color: white">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+      <h1 style="text-align:center; text-align:bold; color: #a31621">Congradulations - You have now finished your test!</h1>
+
+      <form id="scoreSubmit">
+        <!-- use hidden input for submission then change the value to score in script -->
+        <input type='hidden' id='scoreField' name="score" value='1'/>
+        <input type='hidden' id='nameField' name="full_name" value='1'/>
+        <h1 id="test" name="scoreSub" style="text-align: center; color: #a31621"></h1>
+      </form>
+
+
+      <h2 style="text-align:center; text-align:bold;">You can close this window now</h2>
+
+
+      <!-- For submitting to spreadsheet -->
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+
+      <script>
+      var name = sessionStorage.getItem("name");
+
+      document.getElementById("nameField").value = name;
+
+
+
+        var score = sessionStorage.getItem("finalCount");
+        var questions = 40;
+
+        document.getElementById('test').innerText = "Your score: "+score+"/"+questions+"  "+Math.round((score/questions)*100)+"%";
+        document.getElementById("scoreField").value = score;
+
+        $.ajax({
+            url:'https://api.apispreadsheets.com/data/8744/', //create new sheet in https://www.apispreadsheets.com/ and get the url for it here
+            type:'post',                                      //Name two columns with names you gave to 2 hidden fields above (full_name and score)
+            data:$("#scoreSubmit").serializeArray(),
+            success: function(){
+              alert("Your Results have Been Submitted :)")
+            },
+            error: function(){
+              alert("There was an error :(")
+            }
+        });
+
+      </script>
+
+  </body>
+  </div>
+</html>

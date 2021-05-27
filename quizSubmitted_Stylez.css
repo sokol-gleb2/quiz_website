@@ -1,0 +1,15 @@
+img[src="IA_Logo.png"] {
+  display: block;
+  max-width: 12%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+body{
+  background-color: white;
+  background-image: url('congrats.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

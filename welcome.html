@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="welcome_stylez.css">
+    <div id="logo">
+      <img src="IA_Logo.png">
+    </div>
+    <title>IE Test Questionnaire</title>
+
+    <h1 style="text-align:center">IELTs Test</h1>
+  </head>
+
+  <body>
+    <div class="boxed" style="margin: 10px 40px">
+      <h3 style="text-align:center" style="margin: 10px 40px">
+        Welcome to IE's personally designed IELTs test. The test will consist of three passages: <br>
+          1. "US billionaires compete to make space the next business frontier" <br>
+          2. "The Great Gatsby" <br>
+          3. "The Challanges of Education in Brazil" <br>
+        After each passage, there will be questions. You should attempt to answer ALL questions.
+        If you are stuck - try guessing. <br><br>
+        When you are done answering the questions to the passage, you can click "Mark Answers" to see how you answered.
+        Then click "To the next Page" button and proceed to the next passage. <br><br>
+        When you are ready, enter your name and click "Begin Test" <br><br>
+        Good Luck!
+
+         </h3>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    <div class="boxed1" style="margin: 10px 40px">
+      <form id="nameForm">
+        <label id="name" style="font-size: 25px">Full Name:    </label>
+        <input id="nameInput" name="full_name" size="30"/>
+      </form>
+    </div>
+
+
+
+    <br>
+
+    <div class="wrapper">
+      <a href="IE_Test_Mk2.html"><button class="toQ1" id="toQ1" onclick="return toQ1()"><span>Begin Test</span></button></a>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <script>
+
+
+      function toQ1(){
+
+        if (document.getElementById('nameInput').value.length == 0) {
+          return false;
+        }else {
+          var name = document.getElementById('nameInput').value;
+          sessionStorage.setItem("name", name);
+          return true;
+
+        }
+
+
+
+
+      }
+    </script>
+
+  </body>
+
+
+</html>

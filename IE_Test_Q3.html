@@ -1,0 +1,459 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="IE_Test_Q3_stylez.css">
+  <div id="logo">
+    <img src="IA_Logo.png">
+  </div>
+
+  <title>Question 3</title>
+</head>
+
+<body>
+
+
+  <div class="boxed1" style="margin: 10px 40px">
+    <u>
+      <h1 style="margin: 20px 40px" style="text-align:left">Passage 3: "The Challenges of Education in Brazil"</h1>
+    </u>
+
+    <img src="brazil.jpg">
+
+      <br>
+      <br>
+
+
+    <!-- Question 1 -->
+    <p style="font-size: 1.5rem;">Question 1: Choose the correct headings for sections D-G from the list of headings below.<br></p>
+      <br>
+      List of headings: <br>
+      A.	Knowing when to stop<br>
+      B.	Demographic expansion and migration<br>
+      C.	Retention rates<br>
+      D.	Bad Quality Instruction: Teaching teachers to teach<br>
+      E.	Content Relevance<br>
+      F.	Building More Schools<br>
+      G.	Universal basic education and government involvement. <br>
+
+    </p>
+    <br>
+
+    <form id="question8">
+
+      <!-- Part 1 -->
+      <label id="text81" for="text81">Section D:  </label>
+      <input type="text" id="answer81" name="question8">
+      <span id="result81"></span>
+      <br>
+
+      <label id="text82" for="text82">Section E:  </label>
+      <input type="text" id="answer82" name="question8">
+      <span id="result82"></span>
+      <br>
+
+      <label id="text83" for="text83">Section F:  </label>
+      <input type="text" id="answer83" name="question8">
+      <span id="result83"></span>
+      <br>
+
+      <label id="text84" for="text84">Section G:  </label>
+      <input type="text" id="answer84" name="question8">
+      <span id="result84"></span>
+      <br>
+
+    </form>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Question 2 -->
+    <p style="font-size: 1.5rem;">Question 2: Classify the following as being: <br></p>
+      <br>
+      List of headings: <br>
+      A.	A finding of the Brazilian National Assessment of Basic Education. <br>
+      B.	A finding of Fletcher (1984) <br>
+      C.	A finding of Oliveira and Schwartzman <br>
+      D.	A conclusion made by the writer. <br>
+    </p>
+    <br>
+
+    <form id="question9">
+
+      <!-- Part 1 -->
+      <label id="text91" for="text91">Governments should get involved in supporting higher education:  </label>
+      <input type="text" id="answer91" name="question9">
+      <span id="result91"></span>
+      <br>
+
+      <label id="text92" for="text92">A widespread practice in Brazil is the tradition of holding the children back when they do not perform as expected in school exams:  </label>
+      <input type="text" id="answer92" name="question9">
+      <span id="result92"></span>
+      <br>
+
+      <label id="text93" for="text93">There is a serious problem in teaching teachers to teach in Brazil:  </label>
+      <input type="text" id="answer93" name="question9">
+      <span id="result93"></span>
+      <br>
+
+    </form>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Question 3 -->
+    <p style="font-size: 1.5rem;">Question 3: Short Answer Questions  </p>
+
+    <b>
+      <p style="font-size: 1.0rem; ">Choose no more than three words and/or a number from the text for each answer. </p>
+    </b>
+    <form id="question10">
+      <label id="text101" for="text101">How many students are enrolled in basic education today? </label>
+      <input type="text" id="answer101" name="question10">
+      <span id="result101"></span>
+      <br>
+
+      <label id="text102" for="text102">Why does Brazil need the right specialists, researchers and innovators? </label>
+      <input type="text" id="answer102" name="question10">
+      <span id="result102"></span>
+      <br>
+
+      <label id="text103" for="text103">In 2001, what percentage of Brazilian youngsters were already out of school by age 16?  </label>
+      <input type="text" id="answer103" name="question10">
+      <span id="result103"></span>
+      <label id="text103b" for="text103b"> %  </label>
+      <br>
+
+      <br>
+      <br>
+
+
+    </form>
+
+
+
+    <!-- Question 4 -->
+    <p style="font-size: 1.5rem;">Question 4: Which paragraphs contain the following information? <br></p>
+      <br>
+      Write the correct letter of the paragraph which contains: <br>
+
+    </p>
+    <br>
+
+    <form id="question11">
+
+      <!-- Part 1 -->
+      <label id="text111" for="text111">The total enrolment rate of education:  </label>
+      <input type="text" id="answer111" name="question11">
+      <span id="result111"></span>
+      <br>
+
+      <label id="text112" for="text112">The population of the age bracket 7-17  </label>
+      <input type="text" id="answer112" name="question11">
+      <span id="result112"></span>
+      <br>
+
+      <label id="text113" for="text113">The writer’s view on what it is necessary for the government to do  </label>
+      <input type="text" id="answer113" name="question11">
+      <span id="result113"></span>
+      <br>
+
+
+    </form>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <button id="checkB3" onclick="checkB3()">Mark Answers</button>
+    <br>
+    <br>
+    <br>
+
+    <a href="quizSubmitted.html"><button class="toSub" id="toSub" onclick="toSub()" style="float: right"><span>End Test</span></button></a>
+    <br>
+    <br>
+    <br>
+
+
+  </div>
+
+
+
+
+  <script>
+
+  var name = sessionStorage.getItem("name");
+  sessionStorage.setItem("name", name);
+
+
+  var count = sessionStorage.getItem("count2");
+  var marked = false;
+
+  function checkB3(){
+    marked = true;
+
+    //Question 28:
+    var temp9 = document.getElementById('answer81').value;
+    var correctAnswer81 = "D";
+    if (temp9.toUpperCase() == correctAnswer81) {
+      document.getElementById('answer81').style.color = "limegreen";
+      document.getElementById('result81').style.color = 'limegreen'
+      document.getElementById('result81').innerHTML = 'Correct!'
+      document.getElementById('answer81').disabled = true;
+      count = count + 1;
+    }else{
+      document.getElementById('answer81').style.color = "red";
+      document.getElementById('result81').style.color = 'red'
+      document.getElementById('result81').innerHTML = 'Incorrect!'
+      document.getElementById('answer81').disabled = true;
+    }
+    //------------
+
+
+    //Question 29:
+    var temp10 = document.getElementById('answer82').value;
+    var correctAnswer82 = "E";
+    if (temp10.toUpperCase() == correctAnswer82) {
+      document.getElementById('answer82').style.color = "limegreen";
+      document.getElementById('result82').style.color = 'limegreen'
+      document.getElementById('result82').innerHTML = 'Correct!'
+      document.getElementById('answer82').disabled = true;
+      count = count + 1;
+    }else{
+      document.getElementById('answer82').style.color = "red";
+      document.getElementById('result82').style.color = 'red'
+      document.getElementById('result82').innerHTML = 'Incorrect!'
+      document.getElementById('answer82').disabled = true;
+    }
+    //------------
+
+
+    //Question 30:
+    var temp11 = document.getElementById('answer83').value;
+    var correctAnswer83 = "G";
+    if (temp11.toUpperCase() == correctAnswer83) {
+      document.getElementById('answer83').style.color = "limegreen";
+      document.getElementById('result83').style.color = 'limegreen'
+      document.getElementById('result83').innerHTML = 'Correct!'
+      document.getElementById('answer83').disabled = true;
+      count = count + 1;
+    }else{
+      document.getElementById('answer83').style.color = "red";
+      document.getElementById('result83').style.color = 'red'
+      document.getElementById('result83').innerHTML = 'Incorrect!'
+      document.getElementById('answer83').disabled = true;
+    }
+    //------------
+
+
+    //Question 31:
+    var temp12 = document.getElementById('answer84').value;
+    var correctAnswer84 = "A";
+    if (temp12.toUpperCase() == correctAnswer84) {
+      document.getElementById('answer84').style.color = "limegreen";
+      document.getElementById('result84').style.color = 'limegreen'
+      document.getElementById('result84').innerHTML = 'Correct!'
+      document.getElementById('answer84').disabled = true;
+      count = count + 1;
+    }else{
+      document.getElementById('answer84').style.color = "red";
+      document.getElementById('result84').style.color = 'red'
+      document.getElementById('result84').innerHTML = 'Incorrect!'
+      document.getElementById('answer84').disabled = true;
+    }
+    //------------
+
+
+    //Question 32:
+    var temp13 = document.getElementById('answer91').value;
+    var correctAnswer91 = "D";
+    if (temp13.toUpperCase() == correctAnswer81) {
+      document.getElementById('answer91').style.color = "limegreen";
+      document.getElementById('result91').style.color = 'limegreen'
+      document.getElementById('result91').innerHTML = 'Correct!'
+      document.getElementById('answer91').disabled = true;
+      count = count + 1;
+    }else{
+      document.getElementById('answer91').style.color = "red";
+      document.getElementById('result91').style.color = 'red'
+      document.getElementById('result91').innerHTML = 'Incorrect!'
+      document.getElementById('answer91').disabled = true;
+    }
+    //------------
+
+
+    //Question 33:
+    var temp14 = document.getElementById('answer92').value;
+    var correctAnswer92 = "B";
+    if (temp14.toUpperCase() == correctAnswer92) {
+      document.getElementById('answer92').style.color = "limegreen";
+      document.getElementById('result92').style.color = 'limegreen'
+      document.getElementById('result92').innerHTML = 'Correct!'
+      document.getElementById('answer92').disabled = true;
+      count = count + 1;
+    }else{
+      document.getElementById('answer92').style.color = "red";
+      document.getElementById('result92').style.color = 'red'
+      document.getElementById('result92').innerHTML = 'Incorrect!'
+      document.getElementById('answer92').disabled = true;
+    }
+    //------------
+
+
+    //Question 34:
+    var temp15 = document.getElementById('answer93').value;
+    var correctAnswer93 = "C";
+    if (temp15.toUpperCase() == correctAnswer93) {
+      document.getElementById('answer93').style.color = "limegreen";
+      document.getElementById('result93').style.color = 'limegreen'
+      document.getElementById('result93').innerHTML = 'Correct!'
+      document.getElementById('answer93').disabled = true;
+      count = count + 1;
+    }else{
+      document.getElementById('answer93').style.color = "red";
+      document.getElementById('result93').style.color = 'red'
+      document.getElementById('result93').innerHTML = 'Incorrect!'
+      document.getElementById('answer93').disabled = true;
+    }
+    //------------
+
+
+    //Question 35:
+    var temp16 = document.getElementById('answer101').value;
+    var correctAnswer101 = "43.8 MILLION";
+    if (temp16.toUpperCase() == correctAnswer101) {
+      document.getElementById('answer101').style.color = "limegreen";
+      document.getElementById('result101').style.color = 'limegreen'
+      document.getElementById('result101').innerHTML = 'Correct!'
+      document.getElementById('answer101').disabled = true;
+      count = count + 1;
+    }else{
+      document.getElementById('answer101').style.color = "red";
+      document.getElementById('result101').style.color = 'red'
+      document.getElementById('result101').innerHTML = 'Incorrect!'
+      document.getElementById('answer101').disabled = true;
+    }
+    //------------
+
+
+
+    //Question 36:
+    var temp17 = document.getElementById('answer102').value;
+    var correctAnswer102 = "TO PARTICIPATE IN THE MODERN WORLD";
+    if (temp17.toUpperCase() == correctAnswer102) {
+      document.getElementById('answer102').style.color = "limegreen";
+      document.getElementById('result102').style.color = 'limegreen'
+      document.getElementById('result102').innerHTML = 'Correct!'
+      document.getElementById('answer102').disabled = true;
+      count = count + 1;
+    }else{
+      document.getElementById('answer102').style.color = "red";
+      document.getElementById('result102').style.color = 'red'
+      document.getElementById('result102').innerHTML = 'Incorrect!'
+      document.getElementById('answer102').disabled = true;
+    }
+    //------------
+
+
+    //Question 37:
+    var temp18 = document.getElementById('answer103').value;
+    var correctAnswer103 = "19";
+    if (temp18.toUpperCase() == correctAnswer103) {
+      document.getElementById('answer103').style.color = "limegreen";
+      document.getElementById('result103').style.color = 'limegreen'
+      document.getElementById('result103').innerHTML = 'Correct!'
+      document.getElementById('answer103').disabled = true;
+      count = count + 1;
+    }else{
+      document.getElementById('answer103').style.color = "red";
+      document.getElementById('result103').style.color = 'red'
+      document.getElementById('result103').innerHTML = 'Incorrect!'
+      document.getElementById('answer103').disabled = true;
+    }
+    //------------
+
+
+    //Question 38:
+    var temp19 = document.getElementById('answer111').value;
+    var correctAnswer111 = "C";
+    if (temp19.toUpperCase() == correctAnswer111) {
+      document.getElementById('answe111').style.color = "limegreen";
+      document.getElementById('result111').style.color = 'limegreen'
+      document.getElementById('result111').innerHTML = 'Correct!'
+      document.getElementById('answer111').disabled = true;
+      count = count + 1;
+    }else{
+      document.getElementById('answer111').style.color = "red";
+      document.getElementById('result111').style.color = 'red'
+      document.getElementById('result111').innerHTML = 'Incorrect!'
+      document.getElementById('answer111').disabled = true;
+    }
+    //------------
+
+
+    //Question 39:
+    var temp20 = document.getElementById('answer112').value;
+    var correctAnswer112 = "B";
+    if (temp20.toUpperCase() == correctAnswer112) {
+      document.getElementById('answer112').style.color = "limegreen";
+      document.getElementById('result112').style.color = 'limegreen'
+      document.getElementById('result112').innerHTML = 'Correct!'
+      document.getElementById('answer112').disabled = true;
+      count = count + 1;
+    }else{
+      document.getElementById('answer112').style.color = "red";
+      document.getElementById('result112').style.color = 'red'
+      document.getElementById('result112').innerHTML = 'Incorrect!'
+      document.getElementById('answer112').disabled = true;
+    }
+    //------------
+
+
+    //Question 40:
+    var temp21 = document.getElementById('answer113').value;
+    var correctAnswer113 = "G";
+    if (temp21.toUpperCase() == correctAnswer113) {
+      document.getElementById('answer113').style.color = "limegreen";
+      document.getElementById('result113').style.color = 'limegreen'
+      document.getElementById('result113').innerHTML = 'Correct!'
+      document.getElementById('answer113').disabled = true;
+      count = count + 1;
+    }else{
+      document.getElementById('answer113').style.color = "red";
+      document.getElementById('result113').style.color = 'red'
+      document.getElementById('result113').innerHTML = 'Incorrect!'
+      document.getElementById('answer113').disabled = true;
+    }
+    //------------
+
+
+  }
+
+
+  function toSub(){
+    if (Boolean(marked) == false) {
+      checkB3();
+    }
+    sessionStorage.setItem("finalCount", count);
+  }
+
+
+
+  </script>
+
+</body>
+
+</html>
